@@ -1089,6 +1089,31 @@ footer {
         justify-content: space-between;
         gap: 20px;
     }
+    
+    /* Mobile Services Details Layout Overrides */
+    .service-detail-section {
+        padding: 50px 6%;
+    }
+    
+    .service-detail-block,
+    .service-detail-block:nth-child(even) {
+        flex-direction: column !important;
+        gap: 35px;
+        margin-bottom: 60px;
+        align-items: stretch;
+    }
+    
+    .service-detail-content {
+        width: 100% !important;
+        flex: none !important;
+    }
+    
+    .service-detail-img-wrap {
+        width: 100% !important;
+        flex: none !important;
+        aspect-ratio: 16/10;
+        height: auto;
+    }
 }
 
 @media (max-width: 480px) {
