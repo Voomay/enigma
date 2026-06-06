@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Enigma Integrated Solutions</title>
+    <meta name="description" content="Get in touch with Enigma Integrated Solutions. Request a quote or book SANS-compliant inspections for pest control, soil poisoning, structural fumigation, or compliance certificates.">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hexagonal Grid Overlay -->
+    <div class="hex-bg"></div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Enigma Logo" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="index.html#why-us">Why Choose Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="header-cta">
+            <a href="contact.html" class="btn btn-primary header-cta-btn">Get Free Quote</a>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-close" id="mobile-nav-close">&times;</div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="index.html#why-us">Why Choose Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li style="margin-top: 20px;"><a href="contact.html" class="btn btn-primary" style="display: block; text-align: center;">Get Free Quote</a></li>
+        </ul>
+    </div>
+
+    <!-- Breadcrumb Banner -->
+    <section class="breadcrumb-banner">
+        <div class="breadcrumb-content">
+            <h1>Contact Us</h1>
+            <p>
+                <a href="index.html#hero">Home</a> 
+                <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; margin: 0 8px; color: var(--color-gold);"></i> 
+                Contact Us
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact & Quote Form Section -->
+    <section class="section">
+        <div class="contact-section-wrap">
+            <!-- Left: Quote Request Form -->
+            <div class="quote-form-card glass-panel">
+                <div class="form-title">
+                    <h3>Get a Free Quote</h3>
+                    <p>Fill out the form below and we will contact you within 24 hours.</p>
+                </div>
+                
+                <form id="quoteForm">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddr">Email Address</label>
+                            <input type="email" id="emailAddr" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="phoneNum">Phone Number</label>
+                            <input type="tel" id="phoneNum" class="form-control" placeholder="+27 82 123 4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceSelect">Required Service</label>
+                            <select id="serviceSelect" class="form-control" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="Pest Control">Pest Control</option>
+                                <option value="Structural Fumigation">Structural Fumigation</option>
+                                <option value="Industrial Fogging">Industrial Fogging</option>
+                                <option value="Beetle Inspection">Beetle Inspection / COC</option>
+                                <option value="Soil Poisoning">Soil Poisoning</option>
+                                <option value="Termite Control">Termite Control</option>
+                                <option value="Electrical COC">Electrical COC Clearance</option>
+                                <option value="Plumbing COC">Plumbing COC Clearance</option>
+                                <option value="Hygiene & Sanitation">Hygiene & Sanitation</option>
+                                <option value="Housekeeping">Housekeeping</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userMsg">Message / Property Details</label>
+                        <textarea id="userMsg" class="form-control" rows="5" placeholder="Tell us about the property, pest issue, or compliance requirements..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fa-solid fa-paper-plane"></i> Submit Quote Request
+                    </button>
+                    
+                    <div class="submit-success-msg" id="successMsg">
+                        <i class="fa-solid fa-circle-check"></i> Thank you! Your request has been successfully submitted. We'll contact you soon.
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Right: Contact Information Cards -->
+            <div class="info-cards-wrap">
+                <!-- Phone -->
+                <div class="info-card glass-panel">
+                    <div class="info-card-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-card-detail">
+                        <h4>Call Our Office</h4>
+                        <p><a href="tel:+27217539730">+27 21 753 9730</a></p>
+                        <p class="company-detail">Monday - Friday: 08:00 - 17:00</p>
+                    </div>
+                </div>
+                
+                <!-- WhatsApp -->
+                <div class="info-card glass-panel">
+                    <div class="info-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="info-card-detail">
+                        <h4>WhatsApp Support</h4>
+                        <p><a href="https://wa.me/27731719112" target="_blank">+27 73 171 9112</a></p>
+                        <p class="company-detail">Quick responses for emergencies</p>
+                    </div>
+                </div>
+                
+                <!-- Email -->
+                <div class="info-card glass-panel">
+                    <div class="info-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-card-detail">
+                        <h4>Email Correspondence</h4>
+                        <p><a href="mailto:sales@enigmais.co.za">sales@enigmais.co.za</a></p>
+                        <p class="company-detail">Send plans for building quotes</p>
+                    </div>
+                </div>
+                
+                <!-- Business Info -->
+                <div class="info-card glass-panel">
+                    <div class="info-card-icon"><i class="fa-solid fa-building-shield"></i></div>
+                    <div class="info-card-detail">
+                        <h4>Company Registry</h4>
+                        <p>Enigma Integrated Solutions (Pty) Ltd</p>
+                        <p class="company-detail">Registration: 2026/349509/07</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo-wrap logo-container" style="justify-content: flex-start; margin-bottom: 24px;">
+                    <img src="logo.png" alt="Enigma Logo" class="logo-img" style="height: 100px;">
+                </div>
+                <p>Professional, reliable, and SANS-compliant property protection, fumigation, hygiene, and compliance certifications.</p>
+                <div class="footer-slogan" style="margin-bottom: 20px;">WE PROTECT. WE CARE. WE DELIVER EXCELLENCE.</div>
+                <div class="footer-socials" style="display: flex; gap: 15px;">
+                    <a href="#" class="social-icon" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.03); display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); color: var(--color-gold);"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.03); display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); color: var(--color-gold);"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/27731719112" target="_blank" class="social-icon" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.03); display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); color: var(--color-gold);"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:sales@enigmais.co.za" class="social-icon" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.03); display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); color: var(--color-gold);"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-wrap" style="display: flex; gap: 50px; flex: 1.5; justify-content: space-between; flex-wrap: wrap;">
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="index.html#why-us">Why Choose Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Pest Control</a></li>
+                        <li><a href="services.html">Structural Fumigation</a></li>
+                        <li><a href="services.html">Soil Poisoning</a></li>
+                        <li><a href="services.html">Hygiene & Sanitation</a></li>
+                        <li><a href="services.html">Electrical & Plumbing COCs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Regulatory Compliance</h4>
+                    <ul>
+                        <li>Pest Control SANS 10018</li>
+                        <li>Structural Gas Fumigation</li>
+                        <li>Electrical Compliance Certs</li>
+                        <li>Plumbing Regulations</li>
+                        <li>SADPCA Registered Operators</li>
+                    </ul>
+                    <div class="footer-badges" style="display: flex; gap: 15px; margin-top: 15px;">
+                        <img src="badge2.jpeg" alt="DAFF Registered" style="height: 36px; width: auto; object-fit: contain; filter: grayscale(1) brightness(1.2); transition: var(--transition-smooth); cursor: pointer;" onmouseover="this.style.filter='none'" onmouseout="this.style.filter='grayscale(1) brightness(1.2)'" title="DAFF Registered Operators Check">
+                        <img src="badg1.jpeg" alt="HACCP Certified" style="height: 36px; width: auto; object-fit: contain; filter: grayscale(1) brightness(1.2); transition: var(--transition-smooth); cursor: pointer;" onmouseover="this.style.filter='none'" onmouseout="this.style.filter='grayscale(1) brightness(1.2)'" title="HACCP Certified Compliance">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Enigma Integrated Solutions (Pty) Ltd. All Rights Reserved.</p>
+            <p>Designed with compliance, accuracy, and protection in mind.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Quick Contact Buttons -->
+    <div class="floating-actions">
+        <a href="tel:+27217539730" class="float-btn float-call" data-tooltip="Call Our Office">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/27731719112" target="_blank" class="float-btn float-whatsapp" data-tooltip="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script src="app.js"></script>
+    <script>
+        // Custom URL Service Parameter Parser for Contact Page Booking
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceParam = urlParams.get('service');
+            if (serviceParam) {
+                const serviceSelect = document.getElementById('serviceSelect');
+                if (serviceSelect) {
+                    for (let option of serviceSelect.options) {
+                        if (option.value.toLowerCase() === serviceParam.toLowerCase()) {
+                            option.selected = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
